@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+  
+  .customizer-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+  }
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(165, 128, 42);
+  }
+.chocolate-options{
+  display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 20px;
+}
+  
+  .chocolate-item {
+    width: 150px;
+        height: 200px;
+        margin: 35px;
+        border: 1px solid black;
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px grey;
+  }
+
+  .chocolate-item img{
+    width: 100%;
+        height: 150px;
+        object-fit: cover;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+  }
+  .chocolate-item .product-info h3{
+    text-align: center;
+    margin: 5px;
+  }
+  .chocolate-item p{
+    text-align: center;
+        margin: 5px;
+        color: green;
+  }
+  .chocolate-item input{
+    display:inline-block;
+        width: 50px;
+        margin: auto;
+        border-radius: 10px;
+  }
+  .selected-chocolates {
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+  }
+  .selected-chocolates h2{
+    font-size: 20px;
+        font-weight: bold;
+        color: seagreen;
+  }
+  .selected-chocolates ul{
+    list-style: none;
+        padding: 0;
+  }
+  .selected-chocolates li span{
+    font-weight: bold;
+  }
+  .selected-chocolates p{
+    font-size: 18px;
+        font-weight: bold;
+        color: brown;
+  }
+  .selected-chocolates button{
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: seagreen;
+    color: rgba(255, 255, 255, 0.866);
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  

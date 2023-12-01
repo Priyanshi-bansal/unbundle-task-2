@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Custom Chocolate Bundle</title>
+</head>
+<body>
+
+  <div class="customizer-container">
+    <div class="title">Build Your Custom Chocolate Pack</div>
+    <p>*Use arrows in the input to change the quantities </p>
+    <div class="chocolate-options">
+      <!-- List of available chocolates -->
+      <!-- You can use images, descriptions, etc., based on your actual products -->
+      <div class="chocolate-item" data-name="choco caremal cake" data-price="2.50">
+        <img src="choco caremal cake.jpg" alt="choco caremal cake">
+        <div class="product-info">
+            <h3>choco caremal cake</h3>
+            <p>$2.50</p>
+            <input
+            type="number"
+            min="0"
+            max="8"
+            value="0"
+            onkeydown="return false"
+            onchange="updateSummary()"
+          />
+        </div>
+      </div>
+      <div class="chocolate-item" data-name="choco cupcake" data-price="3.50">
+        <img src="choco cupcake.jpg" alt="choco cupcake">
+        <div class="product-info">
+            <h3> choco <br>cupcake</h3>
+            <p>$3.50</p>
+            <input
+            type="number"
+            min="0"
+            max="8"
+            value="0"
+            onkeydown="return false"
+            onchange="updateSummary()"
+          />
+        </div>
+      </div>
+      <div class="chocolate-item" data-name="choco dounuts" data-price="1.58">
+        <img src="choco dounuts.jpg" alt="choco dounuts">
+        <div class="product-info">
+            <h3>choco <br> dounuts</h3>
+            <p>$1.58</p>
+            <input
+            type="number"
+            min="0"
+            max="8"
+            value="0"
+            onkeydown="return false"
+            onchange="updateSummary()"
+          />
+        </div>
+      </div>
+      <div class="chocolate-item" data-name="chocolate Hazulnut" data-price="2.67">
+        <img src="chocolate Hazulnut.jpg" alt="chocolate Hazulnut">
+        <div class="product-info">
+            <h3>chocolate Hazulnut</h3>
+            <p>$2.67</p>
+            <input
+            type="number"
+            min="0"
+            max="8"
+            value="0"
+            onkeydown="return false"
+            onchange="updateSummary()"
+          />
+        </div>
+      </div>
+      <div class="chocolate-item" data-name="chocolate mocha" data-price="3.85">
+        <img src="chocolate mocha.jpg" alt="chocolate mocha">
+        <div class="product-info">
+            <h3>chocolate mocha</h3>
+            <p>$3.85</p>
+            <input
+            type="number"
+            min="0"
+            max="8"
+            value="0"
+            onkeydown="return false"
+            onchange="updateSummary()"
+          />
+        </div>
+      </div>
+      <div class="chocolate-item" data-name="dark chocolate" data-price="1.79">
+        <img src="dark chocolate.jpg" alt="dark chocolate">
+        <div class="product-info">
+            <h3>dark <br>chocolate</h3>
+            <p>$1.79</p>
+            <input
+            type="number"
+            min="0"
+            max="8"
+            value="0"
+            onkeydown="return false"
+            onchange="updateSummary()"
+          />
+        </div>
+      </div>
+      <div class="chocolate-item" data-name="choco gems" data-price="2.50">
+        <img src="gems.jpg" alt="choco gems">
+        <div class="product-info">
+            <h3>choco <br>gems</h3>
+            <p>$2.50</p>
+            <input
+            type="number"
+            min="0"
+            max="8"
+            value="0"
+            onkeydown="return false"
+            onchange="updateSummary()"
+          />
+        </div>
+      </div>
+      <div class="chocolate-item" data-name="milky bar" data-price="3.46">
+        <img src="milky bar.jpg" alt="milky bar">
+        <div class="product-info">
+            <h3>milky <br> bar</h3>
+            <p>$3.46</p>
+            <input
+            type="number"
+            min="0"
+            max="8"
+            value="0"
+            onkeydown="return false"
+            onchange="updateSummary()"
+          />
+        </div>
+      </div>
+      <div class="chocolate-item" data-name="orange chocolate" data-price="4.26">
+        <img src="orange chocolate.jpg" alt="orange chocolate">
+        <div class="product-info">
+            <h3>orange chocolate</h3>
+            <p>$4.26</p>
+            <input
+            type="number"
+            min="0"
+            max="8"
+            value="0"
+            onkeydown="return false"
+            onchange="updateSummary()"
+          />
+        </div>
+      </div>
+      
+      <!-- Add more chocolates as needed -->
+    </div>
+
+    <div class="selected-chocolates">
+      <!-- Display selected chocolates and quantities here -->
+      <h2>Your Custom Pack</h2>
+        <ul id="summary-items">
+        </ul>
+        <p>Total Price: $<span id="total-price">0.00</span></p>
+        <button id="summary-button" onclick="placeOrder()">Place Order</button>
+    </div>
+
+    <p id="total-price">Total Price: $ 0.00</p>
+    <button id="summary-button" onclick="placeOrder()">Place Order</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
